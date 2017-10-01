@@ -1,0 +1,220 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+header{
+    background: #094468;
+    height:60px;
+}
+.btn-menu{
+    font-size: 2.5em;
+    text-align: right;
+    display:block;
+    color:#fff;
+    line-height: 2.1em;
+}
+.btn-menu:after{
+   position: absolute;
+   content: '\2630';
+   top:0;
+   right:30px;
+}
+#breadcrumbs{
+    background: #3078ae;
+    padding-left: 20px;
+}
+
+#breadcrumbs a{
+    color:#fff;
+    line-height: 2em;
+}
+.greeting{
+    height:100px;
+    color:#fff;
+    border-bottom: 1px solid #000;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3078ae+1,ffffff+100 */
+background: #1a313f; /* Old browsers */
+background: -moz-linear-gradient(left, #1a313f 1%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #1a313f 1%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #1a313f 1%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a313f', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.greeting h2{
+    margin-left: 20px;
+    padding-top: 30px;
+    margin-top:0;
+}
+#navigation{
+    position:relative;
+}
+nav{
+    background: #3078ae;
+    color: #fff;
+   transform: translateX(-200%);
+}
+
+nav .item{
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    background: #3078ae;
+}
+nav .item p{
+    margin: 20px 20px 10px 45px;
+    position: relative;
+
+}
+
+nav .item.selected{
+    background: #fff;
+    color:#3078ae;
+}
+nav#main > .item > p:before{
+     content: '\2736';
+    position: absolute;
+    top: -17px;
+    left: -35px;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    color: #fff;
+}
+nav#main > .item.selected > p:before{
+    color:#3078ae;
+}
+
+nav#subNav1 {
+    position: absolute;
+    top:100px;
+    left:45px;
+    width:100%;
+    background: transparent;
+}
+
+#subNav1 .item .item{
+    margin-left:0px;
+}
+
+#subNav1 .item .item p{
+    margin-left:30px;
+}
+
+#subNav1 .item .item .arrow{
+    background: transparent;
+    transform: rotate(90deg);
+}
+
+#subNav1 .item .item .arrow.selected{
+    transform: rotate(-90deg);
+}
+
+#subNav1 .item .item .item{
+    background: #508bba
+}
+#subNav1 .item .item .item p{
+    margin-left:35px;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.hide{
+    display: none;
+}
+.separator{
+    clear:both;
+   
+}
+.item.heading{
+    background:#508bba;
+}
+.arrow{
+    background:#508bba;
+    width:50px;
+    height:50px;
+    color:#fff;
+    font-size: 1.5em;
+    position:relative;
+}
+.arrow:after{
+    content: '\276d';
+    position:absolute;
+    top:10px;
+    left:20px;
+}
+.close{
+    width:50px;
+    height:50px;
+    color:#fff;
+    font-size: 1.5em;
+    position:relative;
+    margin-right: 5px;
+}
+.close:after{
+    content: '\2715';
+    position:absolute;
+    top:10px;
+    left:20px;
+}
+/*KEYFRAMES*/
+@keyframes rotateMenuButtonOpen {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(89deg); }
+}
+@keyframes rotateMenuButtonClose {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(89deg); }
+}
+.btn-menu:after{
+    -webkit-animation: rotateMenuButtonClose 1s;
+}
+
+.btn-menu.open:after{
+    -webkit-animation: rotateMenuButtonOpen 1s;
+}
+.btn-menu.is-active:after{
+    content: '\2715';
+}
+
+
+@keyframes showMainNav {
+  0%{transform: translateX(-100%);}
+  100% {transform: translateX(0); }
+}
+@keyframes hideMainNav {
+  0%{transform: translateX(0);}
+  100% {transform: translateX(-200%); }
+}
+nav#main.open{
+    -webkit-animation: showMainNav 1s;
+}
+nav#main{
+    -webkit-animation: hideMainNav 1s;
+}
+
+
+
+@keyframes showSubNav1 {
+  0%{transform: translateX(100%);}
+  100% {transform: translateX(0); }
+}
+@keyframes hideSubNav1 {
+  0%{transform: translateX(0);}
+  100% {transform: translateX(100%); }
+}
+nav#subNav1{
+    -webkit-animation: hideSubNav1 1s;
+}
+nav#subNav1.open{
+    -webkit-animation: showSubNav1 1s;
+    
+}
+
+nav#main.is-active{
+    transform: translateX(0);
+}
+nav#subNav1.is-active{
+    transform: translateX(0);
+}

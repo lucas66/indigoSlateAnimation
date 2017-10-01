@@ -1,0 +1,34 @@
+{
+  "name": "indigo-slate-animations",
+  "version": "0.0.0",
+  "private": true,
+  "license": "see LICENSE file",
+  "description": "Sample code for Indigo Slate from Lucas Smith",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucas66/indigoSlateAnimation.git"
+  },
+  "keywords": [
+    "Indigo Slate",
+    "Lucas Smith",
+    "animation"
+  ],
+  "author": "lucas66",
+ "bugs": {
+    "url": "https://github.com/lucas66/indigoSlateAnimation/issues"
+  },
+  "homepage": "https://github.com/lucas66/indigoSlateAnimation",
+  "engines" : {
+    "node" : "0.12.x"
+  }
+}

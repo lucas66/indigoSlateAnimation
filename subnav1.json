@@ -1,0 +1,41 @@
+{
+    "My Schedule & Bidding" :["Item1","Item2","item3","item4","item5","item6"],
+    "Safety" :[{
+            "Reporting": ["I-21 Inquiry Reporting", "ASAP Reporting", "General ASAP Information", "Flight Attendant Incident Report"],
+            "Agriculture & Customs": ["Reporting", "Agriculture & Customs", "Known Crewmember", "Product Safety Data Search"],
+            "Known Crewmember": ["Reporting", "Agriculture & Customs", "Known Crewmember", "Product Safety Data Search"],
+            "Product Safety Data Search": ["Reporting", "Agriculture & Customs", "Known Crewmember", "Product Safety Data Search"]
+    }],
+    "Training" :[{
+        "Training Item 1":["Item2","item3","item4","item5","item6"],
+        "Training Item 2":["Item2","item3","item4","item5","item6"]
+        }],
+    "Administration" :[{
+        "OJI and Leaves":["Item2","item3","item4","item5","item6"],
+        "Pay and Benefits":["Item2","item3","item4","item5","item6"],
+        "Performance":["Item2","item3","item4","item5","item6"],
+        "Inflight Resource Directory":["Item2","item3","item4","item5","item6"],
+        "Mobile and Web":["Item2","item3","item4","item5","item6"],
+        "AFA":["Item2","item3","item4","item5","item6"]
+        }],
+    "Catering &amp; Brand" :[{
+        "Catering &amp; Brand 1":["Item2","item3","item4","item5","item6"],
+        "Catering &amp; Brand 2":["Item2","item3","item4","item5","item6"]
+        }],
+    "Hotels" :[{
+            "Hotels 1":["Item2","item3","item4","item5","item6"],
+            "Hotels 2":["Item2","item3","item4","item5","item6"]
+    }],
+    
+    "My Base" :[{
+            "My Base 1":["Item2","item3","item4","item5","item6"],
+            "My Base 2":["Item2","item3","item4","item5","item6"]
+    }],
+    "Recognition" :[{
+            "Recognition 1":["Item2","item3","item4","item5","item6"],
+            "Recognition 2":["Item2","item3","item4","item5","item6"]
+    }],
+    "Regnition" :[{
+                    "Regnition": ["sub1", "sub2", "sub3"] 
+                }]
+}
